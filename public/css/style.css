@@ -1,0 +1,105 @@
+*{
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;    
+}
+body{
+    background-color: rgb(237, 237, 236);
+}
+nav{
+    background-color: #ff6f00;
+}
+.ty{
+    margin-top: 20px;
+    padding: 35px;
+}
+img.sus {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: #821800; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+  .sus{
+    height: 400px;
+    width: 500px;
+    background-size: cover;
+  }
+  img:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+.ros{
+    margin-top: 20px;
+}
+.gu{
+    height: 12px;
+    border: 0;
+    background-color: #4b2000;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.pu{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+.yu{
+    margin-top: 4px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.text-section {
+    flex: 1;
+    padding: 20px;
+}
+.text-section h1 {
+    color: #e63946;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.text-section p {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+.text-section .operational-hours {
+    color: #e63946;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.btn {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.btn:hover {
+    background-color: #d62828;
+}
+.image-section {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
